@@ -25,3 +25,34 @@
 .text-dark-green {
     color: $dark-green !important;
 }
+
+.bg-orange {
+    background-color: $orange !important;
+}
+
+.bg-green {
+    color: $green !important;
+}
+
+.bg-light-green {
+    background-color: $light-green !important;
+}
+
+.bg-dark-green {
+    background-color: $dark-green !important;
+}
+
+.bg-dark {
+    background-color: $dark !important;
+}
+.text-link {
+    font-size: 16px;
+    color: $dark-green;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+        color: $orange;
+    }
+}

@@ -117,4 +117,103 @@
 }
 /* ---------------------------- Approach AREA END ---------------------------- */
 
+/* ---------------------------- Blog AREA START ---------------------------- */
+.blog__area {
+    padding: 50px 0;
+
+    .blog__nav {
+        margin-bottom: 23px;
+        button {
+            padding: 0 32px;
+            border: 0;
+            background: transparent;
+            line-height: 1;
+            transition: 0.3s;
+            border-left: 1px solid #989898;
+            margin-bottom: 8px;
+            color: $gray;
+            &:first-child {
+                border: 0;
+            }
+            &:hover {
+                color: $orange;
+            }
+            &.active {
+                color: $orange;
+                font-weight: 700;
+            }
+        }
+    }
+    .blog__card {
+        background: $white;
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        margin-bottom: 24px;
+        overflow: hidden;
+        position: relative;
+        .blog__card__thumb {
+            height: 175px;
+            overflow: hidden;
+            margin-bottom: -17px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.3s;
+            }
+        }
+        .blog__card__body {
+            padding: 17px;
+            position: relative;
+            .blog__card__tags {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                margin-right: -17px;
+                margin-bottom: 10px;
+
+                .blog__card__tag {
+                    display: inline-block;
+                    text-decoration: none;
+                    line-height: 1.1;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $white;
+                    padding: 3px 8px;
+                    margin-left: 5px;
+                    margin-bottom: 4px;
+                    background: $light-green;
+                }
+            }
+            .blog__card__date {
+                font-size: 12px;
+                letter-spacing: 1px;
+                display: block;
+                margin-bottom: 7px;
+            }
+            p {
+                font-size: 24px;
+                font-weight: 700;
+                color: $text-color;
+                margin-bottom: 10px;
+                line-height: 1.35;
+            }
+            .text-sm {
+                font-size: 16px;
+                font-weight: 400;
+                color: $text-color;
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+        }
+        &:hover .blog__card__thumb img {
+            transform: scale(1.05);
+        }
+        &:hover .text-link {
+            color: $orange;
+        }
+    }
+}
+/* ---------------------------- Blog AREA END ---------------------------- */
+
 /* ---------------------------- Main AREA END ---------------------------- */
