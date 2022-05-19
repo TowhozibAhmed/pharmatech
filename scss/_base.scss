@@ -36,6 +36,21 @@ body {
     box-sizing: content-box;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: $dark-green;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 17px;
+    line-height: 1.1;
+    color: $dark-green;
+}
 li {
     list-style: none;
 }
@@ -71,7 +86,7 @@ textarea {
 .item__none {
     display: none;
 }
- 
+
 ::-webkit-input-placeholder {
     opacity: 1;
 }

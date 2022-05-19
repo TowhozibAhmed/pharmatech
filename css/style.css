@@ -36,6 +36,22 @@ body {
   box-sizing: content-box;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  color: #33817d;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 17px;
+  line-height: 1.1;
+  color: #33817d;
+}
+
 li {
   list-style: none;
 }
@@ -116,6 +132,22 @@ textarea {
   color: #fff;
 }
 
+.text-orange {
+  color: #dd6735 !important;
+}
+
+.text-green {
+  color: #8cbc4c !important;
+}
+
+.text-light-green {
+  color: #4bb4a2 !important;
+}
+
+.text-dark-green {
+  color: #33817d !important;
+}
+
 /* ---------------------------- HEADER AREA START ---------------------------- */
 .header {
   padding: 40px 0;
@@ -150,7 +182,7 @@ textarea {
   font-weight: 700;
 }
 .header .header__search {
-  margin-left: 10px;
+  margin-left: 14px;
 }
 .header .header__search input {
   width: 215px;
@@ -361,138 +393,259 @@ textarea {
 }
 /* SM Small Device :550px. */
 /* ---------------------------- HEADER AREA END ---------------------------- */
-/* ---------------------------- FOOTER AREA START ---------------------------- */
-.footer__area {
-  margin-top: 70px;
+.hero__area {
+  padding-top: 25px;
+  background: url(../img/background/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.footer__area .container {
-  max-width: 1122px;
+.hero__area .container-fluid {
+  position: relative;
+  max-width: 2385px;
 }
-.footer__area .container .footer__inner__blk {
-  background: #002a3a;
-  padding: 30px 195px;
-  border-top-right-radius: 130px;
-  border-top-left-radius: 130px;
+.hero__area .hero__wrapper {
+  margin-left: auto;
+  padding: 0 30px;
+  width: 50%;
+  padding-bottom: 190px;
+  padding-top: 170px;
 }
-.footer__area .container .footer__inner__blk .footer__blk {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero__area .hero__wrapper .hero__content {
+  margin-right: 100px;
+  max-width: 560px;
 }
-.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
-  border-bottom: 0.5px solid #acacac;
-  display: inline-block;
-  padding-bottom: 28px;
-}
-.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li {
-  display: inline-block;
-}
-.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
-  color: #656565;
-  margin-right: 25px;
-  transition: 0.3s all;
-}
-.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a:hover {
+.hero__area .hero__wrapper .hero__content h2 {
+  font-size: 72px;
+  line-height: 1;
+  margin-bottom: 21px;
+  font-family: "Patua One", cursive;
   color: #33817d;
 }
-.footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
-  margin: 0;
-  font-style: normal;
-  font-weight: 300;
+.hero__area .hero__wrapper .hero__content .hero__thumb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 50%;
+  height: calc(100% - 45px);
+  width: 50%;
+  min-height: 730px;
+  padding-right: 22px;
+}
+.hero__area .hero__wrapper .hero__content .hero__thumb img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0 50% 50% 0;
+  object-fit: cover;
+}
+.hero__area .hero__wrapper .hero__content p {
+  color: #656565;
   font-size: 16px;
-  line-height: 24px;
-  color: #888888;
-  margin-top: 20px;
+  line-height: 1.66;
+  margin-bottom: 32px;
+}
+.hero__area .hero__wrapper .hero__content .hero__content__btn a {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* XL Device :1200px. */
-/* LG Device :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
-  .footer__area .container .footer__inner__blk {
-    padding: 30px 120px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-  }
+/* ---------------------------- Contact AREA Start ---------------------------- */
+.contact__area {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  background: linear-gradient(90deg, #215b6c 0.01%, #33817d 100.03%);
 }
-/* MD Device :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
-  .footer__area {
-    margin-top: 50px;
-  }
-  .footer__area .container .footer__inner__blk {
-    padding: 30px 120px;
-    border-top-right-radius: 65px;
-    border-top-left-radius: 65px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
-    padding-bottom: 15px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
-    font-size: 14px;
-    line-height: 20px;
-    margin-right: 15px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
-    font-size: 12px;
-    line-height: 19px;
-    margin-top: 12px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__logo img {
-    width: 90px;
-  }
+.contact__area .contact__input {
+  margin-bottom: 20px;
 }
-/* SM Small Device :320px. */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-  .footer__area {
-    margin-top: 80px;
-    position: relative;
-    z-index: 22;
-  }
-  .footer__area .container .footer__inner__blk {
-    padding: 18px 20px;
-    border-top-right-radius: 35px;
-    border-top-left-radius: 35px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk {
-    flex-direction: column;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
-    padding-bottom: 15px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul {
-    text-align: center;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
-    font-size: 12px;
-    line-height: 20px;
-    margin-right: 9px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text {
-    text-align: center;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
-    font-size: 12px;
-    line-height: 19px;
-    margin-top: 12px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__logo img {
-    width: 90px;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__logo a {
-    display: none;
-  }
-  .footer__area .container .footer__inner__blk .footer__blk .footer__logo .item__none {
-    display: block;
-    margin-top: -98px;
-    padding-bottom: 15px;
-  }
+.contact__area .contact__input .form-control {
+  background: linear-gradient(180deg, #ffffff 45.83%, #ffffff 100%);
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  height: 60px;
+  padding: 10px 24px;
+  outline: none;
+  box-shadow: unset !important;
+  color: #989898;
+  font-size: 16px;
 }
-/* SM Small Device :550px. */
+.contact__area .contact__input textarea.form-control {
+  height: 120px;
+  resize: none;
+  padding: 20px 24px;
+}
+.contact__area .contact__form__submit {
+  padding-top: 5px;
+}
+.contact__area .contact__form__submit button {
+  height: 52px;
+  width: 180px;
+  background: #8cbc4c;
+}
+.contact__area .contact__form__submit button:hover {
+  background-color: #dd6735;
+}
+.contact__area .contact__details {
+  padding-left: 40px;
+}
+.contact__area .contact__details .contact__nav {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.contact__area .contact__details .contact__nav li a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 19px;
+}
+.contact__area .contact__details .contact__nav li a span {
+  flex: 0 0 auto;
+  margin-right: 12px;
+}
+.contact__area .contact__details .contact__social a {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.contact__area .contact__details .contact__social a:hover {
+  color: #4bb4a2;
+}
+
+/* ---------------------------- Contact AREA End ---------------------------- */
+/* ---------------------------- FOOTER AREA START ---------------------------- */
+.footer {
+  padding-top: 58px;
+  padding-bottom: 75px;
+}
+.footer .footer__wrapper p {
+  font-weight: 300;
+}
+.footer .footer__wrapper .footer__nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #656565;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 0 35px;
+}
+.footer .footer__wrapper .footer__nav ul li a:hover {
+  color: #33817d;
+}
+.footer .footer__wrapper .footer__logo {
+  max-width: 209px;
+}
+
 /* ---------------------------- FOOTER AREA END ---------------------------- */
 /* ---------------------------- IMPORT AREA END ---------------------------- */
+/* ---------------------------- Main AREA START ---------------------------- */
+.main__area {
+  padding-top: 128px;
+}
+
+/* ---------------------------- Challanges AREA START ---------------------------- */
+.challanges__area {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.challange__card {
+  border: 0.5px solid #e0e0e0;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+.challange__card .challange__card__thumb {
+  height: 155px;
+  overflow: hidden;
+}
+.challange__card .challange__card__thumb img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.challange__card .challange__card__body {
+  padding: 19px 28px;
+  padding-bottom: 30px;
+  min-height: 385px;
+}
+.challange__card .challange__card__body h4 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+.challange__card .challange__card__body p {
+  font-size: 16px;
+  line-height: 1.66;
+}
+.challange__card .challange__card__body::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #dd6735;
+  content: "";
+}
+.challange__card.light-green .challange__card__body::after {
+  background-color: #4bb4a2;
+}
+.challange__card.dark-green .challange__card__body::after {
+  background-color: #33817d;
+}
+.challange__card.green .challange__card__body::after {
+  background-color: #8cbc4c;
+}
+.challange__card:hover .challange__card__thumb img {
+  transform: scale(1.05);
+}
+
+/* ---------------------------- Challanges AREA END ---------------------------- */
+/* ---------------------------- Approach AREA Start ---------------------------- */
+.approach__area {
+  padding-top: 165px;
+  padding-bottom: 100px;
+  background: url(../img/background/bg-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.approach__area::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #33817d;
+  opacity: 0.7;
+  content: "";
+}
+.approach__area .approach__content {
+  max-width: 480px;
+  padding-bottom: 20px;
+}
+.approach__area .approach__item {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.approach__area .approach__item .approach__item__icon {
+  max-width: 108px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.approach__area .approach__item h4 {
+  color: #fff;
+}
+
+/* ---------------------------- Approach AREA END ---------------------------- */
+/* ---------------------------- Main AREA END ---------------------------- */
 
 /*# sourceMappingURL=style.css.map */
