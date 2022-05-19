@@ -1,0 +1,498 @@
+/* ---------------------------- IMPORT AREA START ---------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300;400;500;700;900&display=swap");
+/* Base CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:focus {
+  outline: 0 solid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  color: #0a1010;
+}
+
+body {
+  color: #656565;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+button,
+input,
+textarea {
+  outline: none !important;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.desk__none {
+  display: none;
+}
+
+.item__none {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  opacity: 1;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+.btn {
+  background: #dd6735;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+  padding: 11px 24px;
+  min-width: 130px;
+  text-align: center;
+  border-radius: 50px;
+  transition: 0.2s all;
+}
+
+.btn-white {
+  background: #fff;
+  color: #33817d;
+}
+
+.btn:hover {
+  background: #33817d;
+  color: #fff;
+}
+
+/* ---------------------------- HEADER AREA START ---------------------------- */
+.header {
+  padding: 40px 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  background: #fff;
+  box-shadow: 0px 1px 28px rgba(0, 0, 0, 0.1);
+}
+.header .header__logo {
+  max-width: 209px;
+}
+.header .header__nav {
+  display: flex;
+  align-items: center;
+}
+.header .header__nav ul li {
+  display: inline-block;
+}
+.header .header__nav ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #989898;
+  margin-right: 36px;
+  transition: 0.3s all;
+}
+.header .header__nav ul li a:hover, .header .header__nav ul li a.active {
+  color: #989898;
+  font-weight: 700;
+}
+.header .header__search {
+  margin-left: 10px;
+}
+.header .header__search input {
+  width: 215px;
+  height: 42px;
+  border-radius: 50px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.1;
+  padding: 0 19px;
+  color: #989898;
+  background: #F5F4F4;
+}
+.header .header__search button {
+  right: 16px;
+  font-size: 18px;
+  top: 7px;
+  transition: 0.3s;
+  color: #989898;
+}
+.header .header__search button:hover {
+  color: #33817d;
+}
+.header .header__btn {
+  padding-left: 15px;
+}
+
+/* XL Device :1200px. */
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .btn {
+    padding: 12px 5px;
+    min-width: 125px;
+  }
+
+  .header .header__nav .header__btn {
+    padding-left: 60px;
+  }
+  .header .header__nav ul li a {
+    font-size: 16px;
+    margin-right: 18px;
+  }
+}
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn {
+    padding: 12px 5px;
+    min-width: 125px;
+  }
+
+  .desk__none {
+    display: block;
+  }
+
+  .header .header__nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transition: 0.3s all;
+    width: 330px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-top: 120px;
+    background: #fff;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .header__nav.active {
+    left: 0;
+  }
+  .header .header__nav .header__btn {
+    padding-left: 0;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .header .header__nav nav {
+    width: 100%;
+  }
+  .header .header__nav nav ul li {
+    display: block;
+    margin: 8px 0;
+    border-bottom: 1px solid #000;
+  }
+  .header .header__nav nav ul li a {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+    margin-right: 18px;
+  }
+  .header .header__nav .close__menu {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ca0404;
+    color: #ca0404;
+    font-size: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .header .open__menu {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #002a3a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .header .overlay {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 888;
+    background: rgba(0, 0, 0, 0.8117647059);
+    transition: 0.5s all;
+  }
+  .header .overlay.active {
+    left: 0;
+  }
+}
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .btn {
+    padding: 12px 5px;
+    min-width: 125px;
+  }
+
+  .desk__none {
+    display: block;
+  }
+
+  .header .header__nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transition: 0.3s all;
+    width: 330px;
+    padding: 20px;
+    padding-top: 20px;
+    padding-top: 120px;
+    background: #fff;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header .header__nav.active {
+    left: 0;
+  }
+  .header .header__nav .header__btn {
+    padding-left: 0;
+    padding-top: 30px;
+    width: 100%;
+  }
+  .header .header__nav nav {
+    width: 100%;
+  }
+  .header .header__nav nav ul li {
+    display: block;
+    margin: 8px 0;
+    border-bottom: 1px solid #000;
+  }
+  .header .header__nav nav ul li a {
+    display: block;
+    padding: 6px 0;
+    font-size: 16px;
+    margin-right: 18px;
+  }
+  .header .header__nav .close__menu {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ca0404;
+    color: #ca0404;
+    font-size: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .header .open__menu {
+    height: 47px;
+    width: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #002a3a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+/* SM Small Device :550px. */
+/* ---------------------------- HEADER AREA END ---------------------------- */
+/* ---------------------------- FOOTER AREA START ---------------------------- */
+.footer__area {
+  margin-top: 70px;
+}
+.footer__area .container {
+  max-width: 1122px;
+}
+.footer__area .container .footer__inner__blk {
+  background: #002a3a;
+  padding: 30px 195px;
+  border-top-right-radius: 130px;
+  border-top-left-radius: 130px;
+}
+.footer__area .container .footer__inner__blk .footer__blk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
+  border-bottom: 0.5px solid #acacac;
+  display: inline-block;
+  padding-bottom: 28px;
+}
+.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li {
+  display: inline-block;
+}
+.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  color: #656565;
+  margin-right: 25px;
+  transition: 0.3s all;
+}
+.footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a:hover {
+  color: #33817d;
+}
+.footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888888;
+  margin-top: 20px;
+}
+
+/* XL Device :1200px. */
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer__area .container .footer__inner__blk {
+    padding: 30px 120px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+  }
+}
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__area {
+    margin-top: 50px;
+  }
+  .footer__area .container .footer__inner__blk {
+    padding: 30px 120px;
+    border-top-right-radius: 65px;
+    border-top-left-radius: 65px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
+    padding-bottom: 15px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 15px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 12px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__logo img {
+    width: 90px;
+  }
+}
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__area {
+    margin-top: 80px;
+    position: relative;
+    z-index: 22;
+  }
+  .footer__area .container .footer__inner__blk {
+    padding: 18px 20px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk {
+    flex-direction: column;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav {
+    padding-bottom: 15px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul {
+    text-align: center;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu nav ul li a {
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 9px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text {
+    text-align: center;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__menu .copyright__text p {
+    font-size: 12px;
+    line-height: 19px;
+    margin-top: 12px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__logo img {
+    width: 90px;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__logo a {
+    display: none;
+  }
+  .footer__area .container .footer__inner__blk .footer__blk .footer__logo .item__none {
+    display: block;
+    margin-top: -98px;
+    padding-bottom: 15px;
+  }
+}
+/* SM Small Device :550px. */
+/* ---------------------------- FOOTER AREA END ---------------------------- */
+/* ---------------------------- IMPORT AREA END ---------------------------- */
+
+/*# sourceMappingURL=style.css.map */

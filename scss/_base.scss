@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@300;400;500;700;900&display=swap");
+/* Base CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    color: $dark;
+}
+
+body {
+    color: $text-color;
+    font-weight: 400;
+    font-family: $main-font;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.desk__none {
+    display: none;
+}
+
+.item__none {
+    display: none;
+}
+ 
+::-webkit-input-placeholder {
+    opacity: 1;
+}
+::-moz-placeholder {
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    opacity: 1;
+}
+::-ms-input-placeholder {
+    opacity: 1;
+}
+::placeholder {
+    opacity: 1;
+}
