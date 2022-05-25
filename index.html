@@ -7,7 +7,7 @@
 	<title>Title Here</title>
 	<link href="css/fontawesome.css" rel="stylesheet">
 	<link href="css/all.min.css" rel="stylesheet" />
-	<link href="css/bootstrap.min.css" rel="stylesheet" /> 
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 	<link href="css/responsive.css" rel="stylesheet" />
 
@@ -214,7 +214,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
+			<video class="top-video" id="my-video" autoplay loop muted>
+				<source src="./video/bg-video.mp4" type="video/mp4">
+			</video>
 		</section>
 		<!----------- Approach Area End ------------>
 
@@ -227,12 +230,13 @@
 				<div class="common-content text-center">
 					<h3>What’s New</h3>
 				</div>
-				<div class="blog__nav d-flex align-items-center justify-content-center filters-button-group">
-					<button data-filter="*" class="active">All</button>
-					<button data-filter=".blog">Blog</button>
-					<button data-filter=".articles">Articles</button>
-					<button data-filter=".press">Press Releases</button>
-					<button data-filter=".news">News</button>
+				<div
+					class="blog__nav d-flex button-group filters-button-group align-items-center justify-content-center">
+					<button data-filter="*" class="active filter-button">All</button>
+					<button data-filter=".blog" class="filter-button">Blog</button>
+					<button data-filter=".articles" class="filter-button">Articles</button>
+					<button data-filter=".press" class="filter-button">Press Releases</button>
+					<button data-filter=".news" class="filter-button">News</button>
 				</div>
 				<div class="blog__card__wrapper">
 					<div class="row card-filter">
@@ -428,11 +432,27 @@
 
 
 
-	<script src="js/jquery-3-6-0.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/isotope.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		const myVideo = document.getElementById('my-video');
+
+		// Not all browsers return promise from .play().
+		const playPromise = myVideo.play() || Promise.reject('');
+		playPromise.then(() => {
+			// Video could be autoplayed, do nothing.
+		}).catch(err => {
+			// Video couldn't be autoplayed because of autoplay policy. Mute it and play.
+			myVideo.muted = true;
+			myVideo.play();
+		});
+
+	</script>
+
 
 	<script>
 
@@ -441,6 +461,7 @@
 			itemSelector: '.card-filter .col-sm-6',
 			layoutMode: 'fitRows'
 		});
+
 
 		// filter functions
 		var filterFns = {
@@ -488,7 +509,17 @@
 		}
 
 	</script>
+	<script>
 
+		$('.filter-button').click(function () {
+
+			$('.filter-button').removeClass('active');
+			$(this).addClass('active');
+
+		});
+
+
+	</script>
 </body>
 
 </html>

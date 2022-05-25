@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.dataTables.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+    <!--------- Dashboard Menu area start --------->
+    <aside class="dashboard__menu">
+        <div class="menu-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="dashboard__menu__logo">
+            <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+        </div>
+        <div class="dashboard__menu__links">
+            <ul>
+                <li class="active"><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Dashboard</a>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Inbox</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Calendar</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Recruitment <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample">
+                        <ul>
+                            <li><a href=""> Jobs</a></li>
+                            <li><a href=""> Candidate</a></li>
+                            <li><a href=""> Interviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample2"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Projects <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample2">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample3"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        People <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample3">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Talent Pool</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Time & Expenses</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Reports</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                        aria-controls="collapseExample4"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Files <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample4">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                        aria-controls="collapseExample5"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Company <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample5">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                        aria-controls="collapseExample6"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Settings <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample6">
+                        <ul>
+                            <li><a href=""> App Configuraiton</a></li>
+                            <li><a href=""> Subscriptions</a></li>
+                            <li><a href=""> API</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Logoff</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--------- Dashboard Menu area end --------->
+
+
+
+
+    <!--------- Main area start --------->
+    <main class="main__area">
+        <!--------- Header area start --------->
+        <header class="header dashboard-header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="menu-open">
+                    <i class="far fa-bars"></i>
+                </div>
+                <div class="header__search">
+                    <form action=""><button class="bg-transparent p-0 border-0"><i class="fal fa-search"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__right d-flex align-items-center justify-content-end">
+                    <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                    <div class="dropdown header__profile__dropdown">
+                        <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user-thumb.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------- Header area end --------->
+
+
+
+        <!--------- Breadcrumb area start --------->
+        <section class="breadcrumb__area">
+            <ul>
+                <li><a href=""> Settings</a></li>
+                <li class="current"> App Configuration </li>
+            </ul>
+        </section>
+        <!--------- Breadcrumb area end --------->
+
+
+
+        <!--------- Main area Wrapper start --------->
+        <section class="main__wrapper">
+            <div class="form__card">
+                <div class="form__card__title__wrap d-flex align-items-center justify-content-between">
+                    <div class="form__card__title__wrap__left d-flex align-items-center ">
+                        <div class="form__card__title__btn"><a href=""><i class="fal fa-arrow-left"></i></a></div>
+                        <div class="form__card__title border-0">
+                            Manage Team
+                        </div>
+                    </div>
+                    <div class="form__card__title__wrap__right">
+                        <button class="common__btn btn-green btn-sm rounded-0 offcanvas-open">New Member</button>
+                    </div>
+                </div>
+                <div class="form__card__flex d-flex">
+                    <div class="form__card__navigation">
+                        <ul>
+                            <li><a href="" class="active"> Teams</a></li>
+                            <li><a href=""> Locations</a></li>
+                            <li><a href=""> Positions</a></li>
+                            <li><a href=""> Category</a></li>
+                        </ul>
+                    </div>
+                    <div class="form__card__flex__right">
+                        <div class="form__card__body__wrapper">
+                            <p>Administrator</p>
+                            <div class="data__table__wrapper table-responsive-sm">
+                                <table id="data-table" class="display table">
+                                    <thead>
+                                        <tr>
+                                            <th>Column 1</th>
+                                            <th>Column 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="commmon__data__title d-flex align-items-center justify-content-start">
+                                                    <div class="common__list__card__thumb">
+                                                        <img src="assets/img/user-thumb-1.png" alt="">
+                                                    </div>
+                                                    <p>Donna Jacobs</p>
+                                                    <p class="ms-4 text-light">donna.jacobs@amazonmail.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="last-child">
+                                                <div
+                                                    class="common__list__card__right d-flex align-items-center justify-content-end">
+                                                    <p class="text-green common__list__status"> Active Member</p>
+                                                    <div class="common__card__dropdown">
+                                                        <div class="dropdown">
+                                                            <button
+                                                                class="no-after p-0 bg-transparent border-0 dropdown-toggle"
+                                                                type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fal fa-bars"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>View
+                                                                        Profile</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Edit </a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Delete
+                                                                    </a></li>
+                                                                <li class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"> Change status
+                                                                    </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="commmon__data__title d-flex align-items-center justify-content-start">
+                                                    <div class="common__list__card__thumb">
+                                                        <img src="assets/img/thumb-2.png" alt="">
+                                                    </div>
+                                                    <p>Donna Jacobs</p>
+                                                    <p class="ms-4 text-light">donna.jacobs@amazonmail.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="last-child">
+                                                <div
+                                                    class="common__list__card__right d-flex align-items-center justify-content-end">
+                                                    <p class="text-light common__list__status"> Inactive Member</p>
+                                                    <div class="common__card__dropdown">
+                                                        <div class="dropdown">
+                                                            <button
+                                                                class="no-after p-0 bg-transparent border-0 dropdown-toggle"
+                                                                type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fal fa-bars"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>View
+                                                                        Profile</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Edit </a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Delete
+                                                                    </a></li>
+                                                                <li class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"> Change status
+                                                                    </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="commmon__data__title d-flex align-items-center justify-content-start">
+                                                    <div class="common__list__card__thumb">
+                                                        <img src="assets/img/thumb-3.png" alt="">
+                                                    </div>
+                                                    <p>Donna Jacobs</p>
+                                                    <p class="ms-4 text-light">donna.jacobs@amazonmail.com</p>
+                                                </div>
+                                            </td>
+                                            <td class="last-child">
+                                                <div
+                                                    class="common__list__card__right d-flex align-items-center justify-content-end">
+                                                    <p class="text-red common__list__status"> Delete Member</p>
+                                                    <div class="common__card__dropdown">
+                                                        <div class="dropdown">
+                                                            <button
+                                                                class="no-after p-0 bg-transparent border-0 dropdown-toggle"
+                                                                type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i class="fal fa-bars"></i>
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>View
+                                                                        Profile</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Edit </a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#"><span><i
+                                                                                class="fas fa-eye"></i></span>Delete
+                                                                    </a></li>
+                                                                <li class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="#"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal"> Change status
+                                                                    </a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Main area Wrapper end --------->
+
+
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+
+
+    <!--------- Offcanvas Sidebar area start --------->
+    <aside class="offcanvas__sidebar">
+        <div class="offcanvas__sidebar__body">
+            <div class="offcanvas__sidebar__body__title">
+                <h5>Invite team member</h5>
+                <div class="close-offcanvas offcanvas__close">Close</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh urna, varius et congue vitae,
+                tincidunt vitae magna. Cras vel magna leo. Phasellus rhoncus blandit urna, at vulputate magna finibus
+                vitae.
+            </p>
+            <form action="">
+
+
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="single__input__item">
+                            <label for="">Email address <span class="text-red">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="single__input__item">
+                            <label for="">Email address <span class="text-red">*</span></label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Administartor</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-icon">
+                            <img src="assets/img/trash.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="single__input__item">
+                            <label for="">Email address <span class="text-red">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="single__input__item">
+                            <label for="">Email address <span class="text-red">*</span></label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Administartor</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-icon">
+                            <img src="assets/img/plus.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas__form__btn">
+                    <button class="common__btn">Send Invite</button>
+                </div>
+
+
+            </form>
+        </div>
+    </aside>
+    <!--------- Offcanvas Sidebar area end --------->
+
+
+
+
+
+    <!--------- Modal area start --------->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Change Status</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="single__input__item">
+                                    <label for=""> Change Status from <b> Active Member </b> to</label>
+                                    <select class="form-select " id="dropdownSelect">
+                                        <option selected=""> Select</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="form__buttons__row w-100 d-flex align-items-center justify-content-between">
+                        <button class="common__btn gray-btn" data-bs-dismiss="modal">Cancel & Close </button>
+                        <button class="common__btn"> Update Status Change</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Modal area end --------->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        $('#dropdownSelect').select2();
+        $('.dropdownSelect').select2();
+    </script>
+
+
+
+
+
+</body>
+
+</html>

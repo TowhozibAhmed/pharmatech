@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/tags-input.css" rel="stylesheet">
+    <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+
+
+    <!--------- Dashboard Menu area start --------->
+    <aside class="dashboard__menu">
+        <div class="menu-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="dashboard__menu__logo">
+            <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+        </div>
+        <div class="dashboard__menu__links">
+            <ul>
+                <li class=""><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Dashboard</a>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Inbox</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Calendar</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                        aria-controls="collapseExample"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Recruitment <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse show" id="collapseExample">
+                        <ul>
+                            <li><a href=""> Jobs</a></li>
+                            <li><a href=""> Candidate</a></li>
+                            <li><a href=""> Interviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample2"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Projects <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample2">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample3"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        People <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample3">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Talent Pool</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Time & Expenses</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Reports</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                        aria-controls="collapseExample4"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Files <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample4">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                        aria-controls="collapseExample5"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Company <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample5">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                        aria-controls="collapseExample6"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Settings <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample6">
+                        <ul>
+                            <li><a href=""> App Configuraiton</a></li>
+                            <li><a href=""> Subscriptions</a></li>
+                            <li><a href=""> API</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Logoff</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--------- Dashboard Menu area end --------->
+
+
+
+
+    <!--------- Main area start --------->
+    <main class="main__area">
+        <!--------- Header area start --------->
+        <header class="header dashboard-header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="menu-open">
+                    <i class="far fa-bars"></i>
+                </div>
+                <div class="header__search">
+                    <form action=""><button class="bg-transparent p-0 border-0"><i class="fal fa-search"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__right d-flex align-items-center justify-content-end">
+                    <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                    <div class="dropdown header__profile__dropdown">
+                        <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user-thumb.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------- Header area end --------->
+
+
+
+        <!--------- Breadcrumb area start --------->
+        <section class="breadcrumb__area">
+            <ul>
+                <li><a href=""> Settings</a></li>
+                <li class="current"> App Configuration </li>
+            </ul>
+        </section>
+        <!--------- Breadcrumb area end --------->
+
+
+
+        <!--------- Main area Wrapper start --------->
+        <section class="main__wrapper">
+            <div class="form__card">
+                <div class="form__card__title__wrap border-0 d-flex align-items-center justify-content-between">
+                    <div class="form__card__title__wrap__left d-flex align-items-center ">
+                        <div class="form__card__title__btn"><a href=""><i class="fal fa-arrow-left"></i></a></div>
+                        <div class="form__card__title border-0">
+                            Jobs (45)
+                        </div>
+                    </div>
+                    <div class="form__card__title__wrap__right d-flex align-items-center pt-0 pb-0 ">
+                        <button class="common__btn btn-green btn-sm rounded-0"> Add New Job </button>
+                        <div class="form__card__title__wrap__btn ms-3 ">
+                            <button class="filter__button"><img src="assets/img/filter-icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="job__data__table__wrapper">
+                <div class="data__table hide-search  show-th pb-4">
+
+                    <div class="table-responsive-sm">
+                        <table id="data-table" class="display table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Jobs</th>
+                                    <th scope="col">Locations</th>
+                                    <th scope="col">Published on</th>
+                                    <th scope="col">Candidate</th>
+                                    <th scope="col">Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead> 
+                            <tbody>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status">
+                                            <span></span> Draft
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Engineering Manager</td>
+                                    <td> Dexter, Michigan(MI)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>0</b></td>
+                                    <td>
+                                        <div class="status live">
+                                            <span></span> Live
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status pending">
+                                            <span></span> Pending
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Head of Finance and Operations</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status delete">
+                                            <span></span> Delete
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status">
+                                            <span></span> Draft
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Engineering Manager</td>
+                                    <td> Dexter, Michigan(MI)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>0</b></td>
+                                    <td>
+                                        <div class="status live">
+                                            <span></span> Live
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status pending">
+                                            <span></span> Pending
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Head of Finance and Operations</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status delete">
+                                            <span></span> Delete
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status">
+                                            <span></span> Draft
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> Engineering Manager</td>
+                                    <td> Dexter, Michigan(MI)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>0</b></td>
+                                    <td>
+                                        <div class="status live">
+                                            <span></span> Live
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Senior Business Analyst</td>
+                                    <td>Arizona (Office)</td>
+                                    <td>14 January 2012</td>
+                                    <td><b>11</b></td>
+                                    <td>
+                                        <div class="status pending">
+                                            <span></span> Pending
+                                        </div>
+                                    </td>
+                                    <td class="table__action__td">
+                                        <div class="table__action d-flex align-items-center ">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle bg-transparent p-0 border-0 no-after"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <i class="fal fa-ellipsis-v"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="table__arrow">
+                                                <a href=""><i class="far fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div> 
+                </div> 
+            </div>
+        </section>
+        <!--------- Main area Wrapper end --------->
+
+
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+
+
+    <!--------- Filter Sidebar area start --------->
+    <aside class="location--offcanvas">
+        <div class="offcanvas__sidebar__title d-flex align-items-center justify-content-between">
+            <p>Filters</p>
+            <div class="offcanvas__sidebar__title__right d-flex align-items-center justify-content-end">
+                <button class="common__btn btn-bordered gray-btn btn-sm">Clear All</button>
+                <div class="offcanvas__close__button close-offcanvas">
+                    <i class="fal fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__sidebar__body position-inherit">
+            <form action="">
+
+                <div class="single__input__item">
+                    <label for=""> Search by keywords </label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="single__input__item">
+                    <label for=""> Sort by Manager </label>
+                    <select class="form-select dropdownSelect" aria-label="Default select example">
+                        <option selected=""> Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="single__input__item">
+                    <label for=""> Sort by Location </label>
+                    <select class="form-select dropdownSelect" aria-label="Default select example">
+                        <option selected=""> Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="single__input__item">
+                    <label for=""> Sort by Skill </label>
+                    <input type="text" class="form-control tag-input" data-role="tagsinput">
+                </div>
+                <div class="single__input__item">
+                    <label for=""> Sort by Status </label>
+                    <select class="form-select dropdownSelect" aria-label="Default select example">
+                        <option selected=""> Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="single__input__item">
+                    <label for=""> Sort by Hire Type </label>
+                    <select class="form-select dropdownSelect" aria-label="Default select example">
+                        <option selected=""> Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="single__input__item">
+                    <label for=""> Sort by Job Category </label>
+                    <select class="form-select dropdownSelect" aria-label="Default select example">
+                        <option selected=""> Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="row gx-3">
+                    <div class="col-sm-6">
+                        <div class="single__input__item">
+                            <label for=""> Sort by </label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="single__input__item">
+                            <label for=""> Dates </label>
+                            <input type="date" name="" id="" class="form-control" placeholder="Dates">
+                            <div class="input-icon"><img src="assets/img/calender-icon.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="apply__filter__btn">
+            <button type="submit">Apply Filters</button>
+        </div>
+    </aside>
+    <!--------- Filter Sidebar area end --------->
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/tags-input.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('#dropdownSelect').select2();
+        $('.dropdownSelect').select2();
+    </script>
+
+
+</body>
+
+</html>

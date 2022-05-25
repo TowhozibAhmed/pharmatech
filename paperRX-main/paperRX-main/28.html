@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+
+    <!--------- Dashboard Menu area start --------->
+    <aside class="dashboard__menu">
+        <div class="menu-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="dashboard__menu__logo">
+            <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+        </div>
+        <div class="dashboard__menu__links">
+            <ul>
+                <li class="active"><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Dashboard</a>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Inbox</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Calendar</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Recruitment <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample">
+                        <ul>
+                            <li><a href=""> Jobs</a></li>
+                            <li><a href=""> Candidate</a></li>
+                            <li><a href=""> Interviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample2"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Projects <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample2">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample3"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        People <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample3">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Talent Pool</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Time & Expenses</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Reports</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                        aria-controls="collapseExample4"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Files <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample4">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                        aria-controls="collapseExample5"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Company <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample5">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                        aria-controls="collapseExample6"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Settings <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample6">
+                        <ul>
+                            <li><a href=""> App Configuraiton</a></li>
+                            <li><a href=""> Subscriptions</a></li>
+                            <li><a href=""> API</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Logoff</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--------- Dashboard Menu area end --------->
+
+
+
+
+    <!--------- Main area start --------->
+    <main class="main__area">
+        <!--------- Header area start --------->
+        <header class="header dashboard-header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="menu-open">
+                    <i class="far fa-bars"></i>
+                </div>
+                <div class="header__search">
+                    <form action=""><button class="bg-transparent p-0 border-0"><i class="fal fa-search"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__right d-flex align-items-center justify-content-end">
+                    <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                    <div class="dropdown header__profile__dropdown">
+                        <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user-thumb.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------- Header area end --------->
+
+
+
+        <!--------- Breadcrumb area start --------->
+        <section class="breadcrumb__area">
+            <ul>
+                <li><a href=""> Settings</a></li>
+                <li class="current"> App Configuration </li>
+            </ul>
+        </section>
+        <!--------- Breadcrumb area end --------->
+
+
+
+        <!--------- Main area Wrapper start --------->
+        <section class="main__wrapper">
+            <div class="form__card">
+                <div class="form__card__title__wrap d-flex align-items-center justify-content-between">
+                    <div class="form__card__title__wrap__left d-flex align-items-center ">
+                        <div class="form__card__title__btn"><a href=""><i class="fal fa-arrow-left"></i></a></div>
+                        <div class="form__card__title border-0">
+                            Job Category
+                        </div>
+                    </div>
+                    <div class="form__card__title__wrap__right d-flex align-items-center ">
+                        <button class="common__btn btn-green btn-sm rounded-0 offcanvas-open"> New Category </button>
+                    </div>
+                </div>
+                <div class="form__card__flex d-flex">
+                    <div class="form__card__navigation">
+                        <ul>
+                            <li><a href=""> Teams</a></li>
+                            <li><a href=""> Locations</a></li>
+                            <li><a href=""> Positions</a></li>
+                            <li><a href="" class="active"> Category</a></li>
+                        </ul>
+                    </div>
+                    <div class="form__card__flex__right">
+                        <div class="form__card__body__wrapper">
+                            <p>Company's positions</p>
+
+                            <div class="data__table__wrapper">
+                                <table id="data-table" class="display table">
+                                    <thead>
+                                        <tr>
+                                            <th>Column 1</th>
+                                            <th>Column 2</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">
+
+                                                    Account Manager
+                                                </p>
+                                            </td>
+                                            <td class="last-child">
+                                                <p class="text-dark text-end">
+                                                    <b>8 Members</b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">
+                                                    Designer
+                                                </p>
+                                            </td>
+                                            <td class="last-child">
+                                                <p class="text-dark text-end">
+                                                    <b>8 Members</b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">
+
+                                                    Sales manager
+
+                                                </p>
+                                            </td>
+                                            <td class="last-child">
+                                                <p class="text-dark text-end">
+                                                    <b>8 Members</b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="text-dark">
+
+
+
+                                                    IT Administrator
+
+                                                </p>
+                                            </td>
+                                            <td class="last-child">
+                                                <p class="text-dark text-end">
+                                                    <b>8 Members</b>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Main area Wrapper end --------->
+
+
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+
+
+
+
+    <!--------- Offcanvas Sidebar area start --------->
+    <aside class="offcanvas__sidebar">
+        <div class="offcanvas__sidebar__body position-inherit">
+            <div class="offcanvas__sidebar__body__title">
+                <h5> Create new category</h5>
+                <div class="close-offcanvas offcanvas__close">Close</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh urna, varius et congue vitae,
+                tincidunt vitae magna. Cras vel magna leo. Phasellus rhoncus blandit urna, at vulputate magna finibus
+                vitae.</p>
+            <form action="">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single__input__item">
+                            <label for=""> Category name <span class="text-red">*</span></label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form__buttons__row offcanvas__form__btns d-flex align-items-center justify-content-between">
+            <button class="common__btn gray-btn close-offcanvas">Cancel & Close </button>
+            <button class="common__btn">Add location </button>
+        </div>
+
+    </aside>
+    <!--------- Offcanvas Sidebar area end --------->
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('#dropdownSelect').select2();
+        $('select').select2();
+    </script>
+
+
+</body>
+
+</html>

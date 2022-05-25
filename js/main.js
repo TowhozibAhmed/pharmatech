@@ -5,13 +5,19 @@
 
 
 
- 
- 
 
- 
+        $('.filter-button').click(function () {
+
+            $('.filter-button').removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+
+
 
     });
- 
+
 
 
 }(jQuery));

@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/tags-input.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+
+
+    <!--------- Dashboard Menu area start --------->
+    <aside class="dashboard__menu">
+        <div class="menu-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="dashboard__menu__logo">
+            <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+        </div>
+        <div class="dashboard__menu__links">
+            <ul>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Dashboard</a>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Inbox</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Calendar</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Recruitment <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample">
+                        <ul>
+                            <li><a href=""> Jobs</a></li>
+                            <li><a href=""> Candidate</a></li>
+                            <li><a href=""> Interviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="true"
+                        aria-controls="collapseExample2" class=""><span><img src="assets/img/menu-icon.svg"
+                                alt=""></span>
+                        Projects <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse show" id="collapseExample2">
+                        <ul>
+                            <li><a href=""> Projects/SOWs</a></li>
+                            <li><a href=""> Archieves</a></li>
+                            <li><a href=""> Spend Managements</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample3"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        People <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample3">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Talent Pool</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Time & Expenses</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Reports</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                        aria-controls="collapseExample4"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Files <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample4">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                        aria-controls="collapseExample5"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Company <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample5">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                        aria-controls="collapseExample6"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Settings <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample6">
+                        <ul>
+                            <li><a href=""> App Configuraiton</a></li>
+                            <li><a href=""> Subscriptions</a></li>
+                            <li><a href=""> API</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Logoff</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--------- Dashboard Menu area end --------->
+
+
+
+
+    <!--------- Main area start --------->
+    <main class="main__area">
+        <!--------- Header area start --------->
+        <header class="header dashboard-header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="menu-open">
+                    <i class="far fa-bars"></i>
+                </div>
+                <div class="header__search">
+                    <form action=""><button class="bg-transparent p-0 border-0"><i class="fal fa-search"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__right d-flex align-items-center justify-content-end">
+                    <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                    <div class="dropdown header__profile__dropdown">
+                        <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user-thumb.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------- Header area end --------->
+
+
+
+        <!--------- Breadcrumb area start --------->
+        <section class="breadcrumb__area">
+            <ul>
+                <li><a href=""> Settings</a></li>
+                <li class="current"> App Configuration </li>
+            </ul>
+        </section>
+        <!--------- Breadcrumb area end --------->
+
+
+
+        <!--------- Main area Wrapper start --------->
+        <section class="main__wrapper">
+            <div class="form__card">
+                <div class="form__card__title__wrap d-flex align-items-center justify-content-between">
+                    <div class="form__card__title__wrap__left d-flex align-items-center ">
+                        <div class="form__card__title__btn"><a href=""><i class="fal fa-arrow-left"></i></a></div>
+                        <div class="form__card__title border-0">
+                            Project
+                        </div>
+                    </div>
+                    <div class="form__card__title__wrap__right d-flex align-items-center ">
+                        <button class="common__btn btn-green btn-sm rounded-0 offcanvas-open"> SOW Checklist Open
+                        </button>
+                    </div>
+                </div>
+                <div class="form__card__flex job__form__wrapper">
+                    <form action="">
+                        <div class="form__card__body__wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Project Name </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Department </label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="form__card__body__wrapper bg-orange-50">
+
+
+                            <div class="row">
+                                <div class="col-md-4 col-lg-3 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Project Type </label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Approved Budget amount </label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Duration - Start Date </label>
+                                        <input type="date" class="form-control" placeholder="Select Date">
+                                        <div class="input-icon">
+                                            <img src="assets/img/calender-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Duration - End Date </label>
+                                        <input type="date" class="form-control" placeholder="Select Date">
+                                        <div class="input-icon">
+                                            <img src="assets/img/calender-icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form__card__body__wrapper">
+
+
+
+                            <p class="mb-1">Description</p>
+                            <p class="text-light">Write the description of this job opening. Job requirements,
+                                conditions...</p>
+
+                            <div class="row pt-2">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="single__input__item">
+                                        <label for=""> Project details. </label>
+                                        <textarea name="" class="form-control big"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="single__input__item">
+                                        <label for=""> Keywords</label>
+                                        <input type="text" class="form-control tag-input" value="React JS"
+                                            data-role="tagsinput" placeholder="Type">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="single__input__item">
+                                        <label for=""> Internal Notes / Team Notes</label>
+                                        <textarea name="" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="form__card__body__wrapper bg-orange-50">
+
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Projet Type </label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Number of Hire </label>
+                                        <input type="text" class="form-control" placeholder="Label Name">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="form__card__body__wrapper">
+
+                            <p class="mb-1">Invite Team members</p>
+                            <p class="text-light"> Bring your team to collabartor on this job</p>
+
+                            <div class="row pt-2">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Hiring Manager</label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Secondary Hiring Manager</label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="single__input__item">
+                                        <label for=""> Other team member</label>
+                                        <input type="text" class="form-control tag-input" value="Philip"
+                                            data-role="tagsinput" placeholder="+ Add a Person">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="mb-1"> Project Documents</p>
+                            <p class="text-light"> Upload project releated document</p>
+
+
+                            <div class="document__list__wrapper">
+                                <div class="add__document__btn">
+                                    <button class="upload-action"><input type="file"><span><img
+                                                src="assets/img/list.svg" alt=""></span> Add Document to the
+                                        List</button>
+                                </div>
+                                <div class="document__lists">
+                                    <div class="document__list__item">
+                                        <p>Document Name</p>
+                                        <p>Expire Date</p>
+                                    </div>
+                                    <div class="document__list__item">
+                                        <p> Name of the documents</p>
+                                        <div class="document__list__action__btn d-flex align-items-center">
+                                            <button class="border-0 bg-transparent"><img src="assets/img/download.svg"
+                                                    alt=""></button>
+                                            <button class="border-0 bg-transparent"><img src="assets/img/trash.svg"
+                                                    alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="document__list__item">
+                                        <p> Name of the documents</p>
+                                        <p> April 18, 2021</p>
+                                        <div class="document__list__action__btn d-flex align-items-center">
+                                            <button class="border-0 bg-transparent"><img src="assets/img/download.svg"
+                                                    alt=""></button>
+                                            <button class="border-0 bg-transparent"><img src="assets/img/trash.svg"
+                                                    alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-4">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="single__input__item">
+                                        <label for=""> Status of the Job</label>
+                                        <select class="form-select dropdownSelect" aria-label="Default select example">
+                                            <option selected=""> Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <div class="form__card__body__wrapper pt-4 pb-4 border-0">
+
+                            <div class="form__buttons__row d-flex align-items-center justify-content-start">
+                                <button class="common__btn me-3"> Create a New Job</button>
+                                <button class="common__btn gray-btn me-3">Save a Draft </button>
+                                <button class="common__btn gray-btn">Canel </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--------- Main area Wrapper end --------->
+
+
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+
+
+
+    <!--------- Offcanvas Sidebar area start --------->
+    <aside class="offcanvas__sidebar">
+        <div class="offcanvas__sidebar__body position-inherit">
+            <div class="offcanvas__sidebar__body__title">
+                <h5> SOW Docuemnt Checklist</h5>
+                <div class="close-offcanvas offcanvas__close">Close</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh urna, varius et congue vitae,
+                tincidunt vitae magna. Cras vel magna leo. Phasellus rhoncus blandit urna, at vulputate magna finibus
+                vitae.</p>
+            <form action="">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single__input__item">
+                            <label for=""> Name of the document <span class="text-red">*</span></label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="single__input__item">
+                            <label for=""> Document checklist <span class="text-red">*</span> </label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="single__input__item">
+                            <label for=""> Upload document <span class="text-red">*</span></label>
+                            <button class="upload-btn upload-action"><input type="file">Browser & Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form__buttons__row offcanvas__form__btns d-flex align-items-center justify-content-between">
+            <button class="common__btn gray-btn close-offcanvas">Cancel & Close </button>
+            <button class="common__btn">Add Document </button>
+        </div>
+
+    </aside>
+    <!--------- Offcanvas Sidebar area end --------->
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/tags-input.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('.dropdownSelect').select2();
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+
+    <!--------- Header area start --------->
+    <header class="header">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="header__logo">
+                <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+            </div>
+            <div class="header__right d-flex align-items-center justify-content-end">
+                <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                <div class="dropdown header__profile__dropdown">
+                    <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/img/user-thumb.png" alt="">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------- Header area end --------->
+
+
+    <!--------- Form area start --------->
+    <section class="form__area">
+        <div class="container">
+            <div class="form__card">
+                <div class="form__card__title">
+                    Get Started with SourceHQ
+                </div>
+                <div class="form__card__body">
+                    <form action="">
+                        <div class="single__input__item">
+                            <label for="">Your Business Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="single__input__item">
+                            <label for=""> Business Website URL</label>
+                            <input type="text" class="form-control" placeholder="https://www.">
+                        </div>
+                        <div class="single__input__item">
+                            <label for=""> Select your Business </label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected> Select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="single__input__item">
+                            <label for=""> Your Mobile Number</label>
+                            <input type="tel" class="form-control" id="phone" data-inputmask="'alias': 'phonebe'">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="single__input__item">
+                                    <label for=""> Career Portal</label>
+                                    <input type="text" class="form-control" placeholder="https://www.">
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="single__input__item">
+                                    <label for=""> Domain</label>
+                                    <input type="text" class="form-control" placeholder="sourchq.app">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__submit__btn pt-3">
+                            <button class="common__btn">Continue to Setup your account</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------- Form area end --------->
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script type='text/javascript'
+        src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('.dropdownSelect').select2();
+    </script>
+    <script>
+        $(":input").inputmask();
+  
+        $("#phone").inputmask({
+            mask: '999 999 9999',
+            placeholder: ' ',
+            showMaskOnHover: false,
+            showMaskOnFocus: false,
+            onBeforePaste: function (pastedValue, opts) {
+                var processedValue = pastedValue;
+
+                //do something with it
+
+                return processedValue;
+            }
+        }); 
+    </script>
+
+</body>
+
+</html>

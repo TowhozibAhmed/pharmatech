@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <title>Title Here</title>
+</head>
+
+<body>
+
+
+
+    <!--------- Dashboard Menu area start --------->
+    <aside class="dashboard__menu">
+        <div class="menu-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="dashboard__menu__logo">
+            <a href=""><img src="assets/img/logo-main.svg" alt=""></a>
+        </div>
+        <div class="dashboard__menu__links">
+            <ul>
+                <li class=""><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Dashboard</a>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Inbox</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Calendar</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                        aria-controls="collapseExample"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Recruitment <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse show" id="collapseExample">
+                        <ul>
+                            <li><a href=""> Jobs</a></li>
+                            <li><a href=""> Candidate</a></li>
+                            <li><a href=""> Interviews</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false"
+                        aria-controls="collapseExample2"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Projects <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample2">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false"
+                        aria-controls="collapseExample3"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        People <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample3">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Talent Pool</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Time & Expenses</a></li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Reports</a></li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false"
+                        aria-controls="collapseExample4"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Files <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample4">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false"
+                        aria-controls="collapseExample5"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Company <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample5">
+                        <ul>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                            <li><a href="">Example Link</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false"
+                        aria-controls="collapseExample6"><span><img src="assets/img/menu-icon.svg" alt=""></span>
+                        Settings <i class="fal fa-chevron-down"></i></a>
+                    <div class="collapse" id="collapseExample6">
+                        <ul>
+                            <li><a href=""> App Configuraiton</a></li>
+                            <li><a href=""> Subscriptions</a></li>
+                            <li><a href=""> API</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""><span><img src="assets/img/menu-icon.svg" alt=""></span> Logoff</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--------- Dashboard Menu area end --------->
+
+
+
+
+    <!--------- Main area start --------->
+    <main class="main__area">
+        <!--------- Header area start --------->
+        <header class="header dashboard-header">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="menu-open">
+                    <i class="far fa-bars"></i>
+                </div>
+                <div class="header__search">
+                    <form action=""><button class="bg-transparent p-0 border-0"><i class="fal fa-search"></i></button>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="header__right d-flex align-items-center justify-content-end">
+                    <a href="" class="header-link"><img src="assets/img/Bell.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Question mark circle.svg" alt=""></a>
+                    <a href="" class="header-link"><img src="assets/img/Cog settings.svg" alt=""></a>
+                    <div class="dropdown header__profile__dropdown">
+                        <button class="no-after bg-transparent border-0 p-0 dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user-thumb.png" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--------- Header area end --------->
+
+
+
+        <!--------- Breadcrumb area start --------->
+        <section class="breadcrumb__area">
+            <ul>
+                <li><a href=""> Settings</a></li>
+                <li class="current"> App Configuration </li>
+            </ul>
+        </section>
+        <!--------- Breadcrumb area end --------->
+
+
+
+        <!--------- Main area Wrapper start --------->
+        <section class="main__wrapper p-0 rounded-0">
+            <div class="form__card p-0 rounded-0">
+                <div class="form__card__title__wrap d-flex align-items-center justify-content-between">
+                    <div class="form__card__title__wrap__left d-flex align-items-center ">
+                        <div class="form__card__title border-0">
+                            Senior Product Designer (UX/UI) <a href="#"
+                                class="text-decoration-none text-dark"><b>(#3455)</b></a>
+                        </div>
+                    </div>
+                    <div class="form__card__title__wrap__right d-flex align-items-center ">
+                        <button class="border-0 bg-transparent"><img src="assets/img/refresh.svg" alt=""></button>
+                        <div class="status live ms-2">
+                            <span></span> Live
+                        </div>
+                    </div>
+                </div>
+                <div class="form__card__flex d-flex min-vh-100 mb-4 border-bottom">
+                    <div class="form__card__navigation job-nav">
+                        <ul>
+                            <li><a href="" class="active"> Job Details</a></li>
+                            <li><a href=""> Inbox (5)</a></li>
+                            <li><a href=""> Shortlisted (34)</a></li>
+                            <li><a href=""> Interview (34)</a></li>
+                            <li><a href=""> Offfered (34)</a></li>
+                            <li><a href=""> Onboarding (2)</a></li>
+                            <li><a href=""> Hired (2)</a></li>
+                            <li><a href=""> Job Settings</a></li>
+                            <li><a href=""> Invite Manager</a></li>
+                        </ul>
+                    </div>
+                    <div class="form__card__flex__right">
+                        <div class="form__card__body__wrapper job__details__card__wrapper">
+                            <div class="external__link">
+                                <label for=""><span><img src="assets/img/external-link.svg" alt=""></span>
+                                    Published</label> <a href="">https://nike.sourcehq.com/job/234345656</a>
+                            </div>
+                            <div class="row pb-3">
+                                <div class="col-md-8">
+                                    <p><b>Skills</b></p>
+                                    <div class="skills__list">
+                                        <button>HTML + CSS</button>
+                                        <button>Figma</button>
+                                        <button>Zepline</button>
+                                        <button>Invision</button>
+                                        <button>HTML + CSS</button>
+                                        <button>Figma</button>
+                                        <button>Zepline</button>
+                                        <button>Invision</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="job__quick__action pt-3">
+                                        <div class="dropdown">
+                                            <button class="btn btn-secondary dropdown-toggle no-after" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Quick Action <i class="fas fa-chevron-circle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Edit Job</a></li>
+                                                <li><a class="dropdown-item" href="#">Duplicate Job</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">Change
+                                                        Status</a></li>
+                                                <li class="dropdown-divider"></li>
+                                                <li><a class="dropdown-item text-red" href="#">Delete Job</a></li>
+                                                <li><a class="dropdown-item" href="#">Archive Job</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="job__details__wrapper">
+                                <div class="row">
+                                    <div class="col-md-8">
+
+                                        <div class="job__details__inner">
+                                            <div class="job__details__wrap">
+                                                <nav>
+                                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                        <button class="nav-link active" id="nav-home-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#nav-home"
+                                                            type="button" role="tab" aria-controls="nav-home"
+                                                            aria-selected="true">Job
+                                                            Description</button>
+                                                        <button class="nav-link" id="nav-profile-tab"
+                                                            data-bs-toggle="tab" data-bs-target="#nav-profile"
+                                                            type="button" role="tab" aria-controls="nav-profile"
+                                                            aria-selected="false">Internal
+                                                            Notes</button>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="nav-tabContent">
+                                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                        aria-labelledby="nav-home-tab">
+
+
+                                                        <div class="job__description">
+                                                            <p><b>We'll cut to the chase. Are you…</b></p>
+                                                            <ul>
+                                                                <li> A mid- to senior-level UX designer? (5+ years
+                                                                    experience)
+                                                                </li>
+                                                                <li>Passionate about solving user and business problems
+                                                                    with
+                                                                    Design
+                                                                    Thinking?</li>
+                                                                <li> A wiz with beautiful and organized Figma components
+                                                                    and
+                                                                    design
+                                                                    systems?</li>
+                                                                <li>Unafraid to tackle complex problems in complex
+                                                                    systems?</li>
+                                                                <li> Great at communicating your ideas to clients and
+                                                                    developers?</li>
+                                                            </ul>
+
+
+
+
+
+
+                                                            <p><b> Then join our team!</b></p>
+
+
+
+                                                            <p> RTS Labs is a solid, fast-growing software development
+                                                                agency
+                                                                specializing in enterprise web and mobile applications.
+                                                                We work
+                                                                with a wide range of clients — from startups to Fortune
+                                                                500
+                                                                companies, across many different industries.</p>
+
+                                                            <p>We're looking for a mid- to senior-level Product
+                                                                Designer. As a
+                                                                member of the Product team, you'll be the voice of the
+                                                                user and
+                                                                the product ambassador. This includes:
+                                                            </p>
+                                                            <p>Creating meaningful and innovative digital experiences
+                                                                for
+                                                                users, and balancing these needs with business goals and
+                                                                constraints
+                                                                Serving as a Product leader and liaison, both externally
+                                                                (with
+                                                                clients) and internally (with the engineering team)</p>
+
+                                                            <p><b>What we offer:</b></p>
+
+                                                            <ul>
+                                                                <li> A competitive salary based on experience</li>
+                                                                <li>401(k) with a 4% company match</li>
+                                                                <li> Family-first environment with paid parental leave
+                                                                    and
+                                                                    flexible
+                                                                    PTO</li>
+                                                                <li> Gym membership discounts</li>
+                                                                <li> Health, vision, life, and short-term disability
+                                                                    insurance
+                                                                </li>
+                                                                <li>40 hours a year for professional development to use
+                                                                    how you
+                                                                    choose</li>
+                                                                <li> A culture of enthusiasm and personal growth, where
+                                                                    you'll
+                                                                    have
+                                                                    the power to shape the direction of RTS Labs, with
+                                                                    no
+                                                                    micro-management</li>
+                                                                <li> Remote/hybrid work with flexible hours</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                            <p><b> What you'll do as Senior Product Designer:
+                                                                </b></p>
+
+                                                            <ul>
+                                                                <li>Build empathy and be a user advocate</li>
+                                                                <li>Conduct user and stakeholder interviews, usability
+                                                                    tests,
+                                                                    and
+                                                                    Design Thinking workshops</li>
+                                                                <li> Collaborate with clients and BSAs to inform
+                                                                    business and
+                                                                    functional requirements</li>
+                                                                <li>
+                                                                    Produce visual artifacts to inform feature
+                                                                    prioritization,
+                                                                    including user flows, information architecture
+                                                                    diagrams, and
+                                                                    wireframes</li>
+                                                                <li> Conduct content audits and plan information
+                                                                    architecture
+                                                                </li>
+                                                                <li> Produce pixel-perfect high-fidelity designs and
+                                                                    prototypes
+                                                                    using
+                                                                    consistent UI components that meet brand standards
+                                                                </li>
+                                                                <li>Leverage analytics tools to measure success, present
+                                                                    opportunities, and support decision-making</li>
+                                                                <li> Liaise with clients and developers to support
+                                                                    product
+                                                                    planning
+                                                                    and implementation</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                            <p><b>What you need to succeed: </b></p>
+
+
+
+
+                                                            <ul>
+                                                                <li> 5+ years experience in UX design, preferably in
+                                                                    software
+                                                                    product
+                                                                    development</li>
+                                                                <li> Experience with Design Thinking process and
+                                                                    workshop
+                                                                    facilitation</li>
+                                                                <li>Expert skills with mobile-first responsive web
+                                                                    design</li>
+                                                                <li> Experience using design systems or component
+                                                                    libraries</li>
+                                                                <li>Experience with Figma for high-fidelity designs and
+                                                                    robust
+                                                                    prototyping (We use Figma but experience with
+                                                                    similar tools
+                                                                    —
+                                                                    Adobe XD, Sketch, etc — is okay too!)</li>
+                                                                <li>Ability to clearly and concisely defend design
+                                                                    decisions and
+                                                                    explain priorities to clients and internal teams
+                                                                </li>
+                                                                <li> Be a leader and mentor: You'll challenge, grow and
+                                                                    contribute to
+                                                                    fostering a collaborative team spirit</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+
+
+
+                                                            <p><b> Bonus points for: </b></p>
+
+                                                            <ul>
+                                                                <li> Experience with complex web applications, digital
+                                                                    engagement
+                                                                    and/or SaaS products</li>
+                                                                <li>Ability to understand complex systems by viewing
+                                                                    them
+                                                                    through
+                                                                    the lens of OOUX (object-oriented UX)</li>
+                                                                <li>Experience with native mobile application design
+                                                                    (iOS and
+                                                                    Android)</li>
+                                                                <li>Experience with Lean and Agile methodologies</li>
+                                                                <li> Knowledge of accessibility, psychology, usability
+                                                                    heuristics</li>
+                                                                <li>Familiarity with popular design systems (Apple's
+                                                                    Human
+                                                                    Interface
+                                                                    guidelines, Google's Material Design, and Chakra UI)
+                                                                </li>
+                                                                <li>Familiarity with basics of HTML, CSS, Javascript
+                                                                </li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                        aria-labelledby="nav-profile-tab">
+
+
+
+                                                        <div class="job__description">
+                                                            <p><b>We'll cut to the chase. Are you…</b></p>
+                                                            <ul>
+                                                                <li> A mid- to senior-level UX designer? (5+ years
+                                                                    experience)
+                                                                </li>
+                                                                <li>Passionate about solving user and business problems
+                                                                    with
+                                                                    Design
+                                                                    Thinking?</li>
+                                                                <li> A wiz with beautiful and organized Figma components
+                                                                    and
+                                                                    design
+                                                                    systems?</li>
+                                                                <li>Unafraid to tackle complex problems in complex
+                                                                    systems?</li>
+                                                                <li> Great at communicating your ideas to clients and
+                                                                    developers?</li>
+                                                            </ul>
+
+
+
+
+
+
+                                                            <p><b> Then join our team!</b></p>
+
+
+
+                                                            <p> RTS Labs is a solid, fast-growing software development
+                                                                agency
+                                                                specializing in enterprise web and mobile applications.
+                                                                We work
+                                                                with a wide range of clients — from startups to Fortune
+                                                                500
+                                                                companies, across many different industries.</p>
+
+                                                            <p>We're looking for a mid- to senior-level Product
+                                                                Designer. As a
+                                                                member of the Product team, you'll be the voice of the
+                                                                user and
+                                                                the product ambassador. This includes:
+                                                            </p>
+                                                            <p>Creating meaningful and innovative digital experiences
+                                                                for
+                                                                users, and balancing these needs with business goals and
+                                                                constraints
+                                                                Serving as a Product leader and liaison, both externally
+                                                                (with
+                                                                clients) and internally (with the engineering team)</p>
+
+                                                            <p><b>What we offer:</b></p>
+
+                                                            <ul>
+                                                                <li> A competitive salary based on experience</li>
+                                                                <li>401(k) with a 4% company match</li>
+                                                                <li> Family-first environment with paid parental leave
+                                                                    and
+                                                                    flexible
+                                                                    PTO</li>
+                                                                <li> Gym membership discounts</li>
+                                                                <li> Health, vision, life, and short-term disability
+                                                                    insurance
+                                                                </li>
+                                                                <li>40 hours a year for professional development to use
+                                                                    how you
+                                                                    choose</li>
+                                                                <li> A culture of enthusiasm and personal growth, where
+                                                                    you'll
+                                                                    have
+                                                                    the power to shape the direction of RTS Labs, with
+                                                                    no
+                                                                    micro-management</li>
+                                                                <li> Remote/hybrid work with flexible hours</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                            <p><b> What you'll do as Senior Product Designer:
+                                                                </b></p>
+
+                                                            <ul>
+                                                                <li>Build empathy and be a user advocate</li>
+                                                                <li>Conduct user and stakeholder interviews, usability
+                                                                    tests,
+                                                                    and
+                                                                    Design Thinking workshops</li>
+                                                                <li> Collaborate with clients and BSAs to inform
+                                                                    business and
+                                                                    functional requirements</li>
+                                                                <li>
+                                                                    Produce visual artifacts to inform feature
+                                                                    prioritization,
+                                                                    including user flows, information architecture
+                                                                    diagrams, and
+                                                                    wireframes</li>
+                                                                <li> Conduct content audits and plan information
+                                                                    architecture
+                                                                </li>
+                                                                <li> Produce pixel-perfect high-fidelity designs and
+                                                                    prototypes
+                                                                    using
+                                                                    consistent UI components that meet brand standards
+                                                                </li>
+                                                                <li>Leverage analytics tools to measure success, present
+                                                                    opportunities, and support decision-making</li>
+                                                                <li> Liaise with clients and developers to support
+                                                                    product
+                                                                    planning
+                                                                    and implementation</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                            <p><b>What you need to succeed: </b></p>
+
+
+
+
+                                                            <ul>
+                                                                <li> 5+ years experience in UX design, preferably in
+                                                                    software
+                                                                    product
+                                                                    development</li>
+                                                                <li> Experience with Design Thinking process and
+                                                                    workshop
+                                                                    facilitation</li>
+                                                                <li>Expert skills with mobile-first responsive web
+                                                                    design</li>
+                                                                <li> Experience using design systems or component
+                                                                    libraries</li>
+                                                                <li>Experience with Figma for high-fidelity designs and
+                                                                    robust
+                                                                    prototyping (We use Figma but experience with
+                                                                    similar tools
+                                                                    —
+                                                                    Adobe XD, Sketch, etc — is okay too!)</li>
+                                                                <li>Ability to clearly and concisely defend design
+                                                                    decisions and
+                                                                    explain priorities to clients and internal teams
+                                                                </li>
+                                                                <li> Be a leader and mentor: You'll challenge, grow and
+                                                                    contribute to
+                                                                    fostering a collaborative team spirit</li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+
+
+
+                                                            <p><b> Bonus points for: </b></p>
+
+                                                            <ul>
+                                                                <li> Experience with complex web applications, digital
+                                                                    engagement
+                                                                    and/or SaaS products</li>
+                                                                <li>Ability to understand complex systems by viewing
+                                                                    them
+                                                                    through
+                                                                    the lens of OOUX (object-oriented UX)</li>
+                                                                <li>Experience with native mobile application design
+                                                                    (iOS and
+                                                                    Android)</li>
+                                                                <li>Experience with Lean and Agile methodologies</li>
+                                                                <li> Knowledge of accessibility, psychology, usability
+                                                                    heuristics</li>
+                                                                <li>Familiarity with popular design systems (Apple's
+                                                                    Human
+                                                                    Interface
+                                                                    guidelines, Google's Material Design, and Chakra UI)
+                                                                </li>
+                                                                <li>Familiarity with basics of HTML, CSS, Javascript
+                                                                </li>
+                                                            </ul>
+
+
+
+
+
+
+
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="job__detail__right">
+                                            <div class="job__detail__list">
+                                                <div class="single__job__detail__list">
+                                                    <p>Job Category <b>Product Design & UX</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Job Position <b>UX Designer</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Location <b>Bloomfield Rential Development
+                                                            8967 State 5 And 20 Rte
+                                                            Bloomfield, New York(NY), 14469</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Remote Working <b> Yes</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Contract type <b>Contract to Hire</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Project SOW <b>Rental Department UX Team</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Schedule Type <b>Hourly Rates</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Hour Salary (Min - Max) <b>$45.00 - $65.00</b></p>
+                                                </div>
+                                                <div class="single__job__detail__list">
+                                                    <p>Hiring Manager </p>
+                                                    <div class="hiring__manager__wrapper">
+                                                        <div class="hiring__manager">
+                                                            <div class="hiring__manager__thumb">
+                                                                <img src="assets/img/user-thumb-1.png" alt="">
+                                                            </div>
+                                                            <div class="hiring__manager__content">
+                                                                <b>Emily Valdez</b>
+                                                                <span>Primary Manager</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hiring__manager">
+                                                            <div class="hiring__manager__thumb">
+                                                                <img src="assets/img/user-thumb-1.png" alt="">
+                                                            </div>
+                                                            <div class="hiring__manager__content">
+                                                                <b>Emily Valdez</b>
+                                                                <span>Primary Manager</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="hiring__manager">
+                                                            <div class="hiring__manager__thumb">
+                                                                <img src="assets/img/user-thumb-1.png" alt="">
+                                                            </div>
+                                                            <div class="hiring__manager__content">
+                                                                <b>Emily Valdez</b>
+                                                                <span>Primary Manager</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------- Main area Wrapper end --------->
+
+
+
+
+
+    </main>
+    <!--------- Main area end --------->
+
+
+
+
+
+
+
+    <!--------- Transfer Modal area start --------->
+
+    <!-- Modal -->
+    <div class="modal fade transfer__modal changeStatus-modal" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal__header position-relative d-flex justify-content-end pb-3">
+                    <div class="transfer__modal__icon">
+                        <img src="assets/img/Controls.svg" alt="">
+                    </div>
+                    <button type="button" class="btn-close p-0 shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal__body pt-0">
+                    <h6 class="mb-3"> Change Status</h6>
+                </div>
+                <div class="modal__status__job">
+                    Current Status is <b>Active</b>
+                </div>
+                <div class="modal__body pt-4">
+                    <form action="">
+                        <div class="single__input__item">
+                            <label for=""> Change the Status </label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="single__input__item">
+                            <label for=""> Reason for Status Change </label>
+                            <select class="form-select dropdownSelect" aria-label="Default select example">
+                                <option selected=""> Select</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="single__input__item">
+                            <label for=""> Comments </label>
+                            <textarea name="" id="" class="form-control" placeholder="Label Name"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 px-4 py-4 justify-content-end">
+                    <button type="button" class="common__btn gray-btn" data-bs-dismiss="modal">Canel</button>
+                    <button type="button" class="common__btn btn-blue">  Update Status Change 
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------- Transfer Modal area end --------->
+
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('#dropdownSelect').select2();
+        $('select').select2();
+    </script>
+
+
+</body>
+
+</html>
